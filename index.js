@@ -1,3 +1,13 @@
+$(document).ready(function() {
+  fetchBooks();
+  fetchHouses();
+})
+
+function fetchHouses() {
+  // fetch the houses 
+  // put them on the page
+}
+
 function fetchBooks() {
  fetch('https://anapioficeandfire.com/api/books')
   .then(resp => resp.json())
@@ -14,6 +24,6 @@ function renderBooks(json) {
   })
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  fetchBooks()
-})
+
+
+
