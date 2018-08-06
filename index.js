@@ -7,6 +7,10 @@ function fetchHouses() {
   // fetch the houses 
   // put them on the page
 }
+fetch('https://anapioficeandfire.com/api/houses')
+.then(resp => resp.json())
+.then(renderHouses)
+
 
 function fetchBooks() {
  fetch('https://anapioficeandfire.com/api/books')
@@ -24,6 +28,6 @@ function renderBooks(json) {
   })
 }
 
-
+funciton renderHouses
 
 
